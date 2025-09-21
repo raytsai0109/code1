@@ -1,7 +1,10 @@
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 using namespace std;
 
-int main(){
-    cout<<"test"<<endl;
+int main() {
+    int a,b,c;
+    cin>>a>>b>>c;
+    cout<<max({a,b,c})<<'\n';
+    cout<<min({a,b,c})<<'\n';
     return 0;
 }

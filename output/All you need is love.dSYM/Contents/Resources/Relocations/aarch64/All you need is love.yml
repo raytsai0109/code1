@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/raytsai/Desktop/code/output/All you need is love'
+relocations:     []
+...
