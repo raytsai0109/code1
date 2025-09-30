@@ -2,9 +2,8 @@
 using namespace std;
 
 int main() {
-    int a,b,c;
-    cin>>a>>b>>c;
-    cout<<max({a,b,c})<<'\n';
-    cout<<min({a,b,c})<<'\n';
-    return 0;
+    string a="012";
+    int b=3;
+    a+=to_string(b);
+    cout<<a;
 }

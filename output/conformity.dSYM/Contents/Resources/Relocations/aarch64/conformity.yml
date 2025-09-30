@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/raytsai/Desktop/code1/output/test'
+binary-path:     '/Users/raytsai/Desktop/code1/output/conformity'
 relocations:     []
 ...
