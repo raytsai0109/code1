@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(){
-    string a;
-    getline(cin,a);
-    cout<<a;
+    string s="3%4";
+    cout<<isdigit(s[1]);
 }
