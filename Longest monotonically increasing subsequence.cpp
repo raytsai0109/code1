@@ -1,7 +1,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-void dfs(vector<int>&lst,vector<vector<int>>&pth,vector<int>&ndfs,vector<vector<int>>ans,int target){
+void dfs(vector<int>&lst,vector<vector<int>>&pth,vector<int>&ndfs,vector<vector<int>>&ans,int target){
     ndfs.push_back(target);
     if(!pth[target].empty()){
         for(int i=0;i<pth[target].size();i++){
@@ -49,11 +49,21 @@ int main(){
                 dfs(lst,pth,ndfs,ans,i);
             }
         }
-    }
-    int c;
-    cout<<c<<'\n';
-    for(int i=0;i<ans.size();i++){
-
+        int c=ans.size();
+        cout<<c<<'\n';
+        for(int i=0;i<ans.size();i++){
+            for(int y=i+1;y<ans.size();y++){
+                if(ans[i][0]>ans[y][0]){
+                    swap(ans[i],ans[y]);
+                }
+            }
+        }
+        for(int i=0;i<ans.size();i++){
+            for(int y=0;y<ans[i].size();y++){
+                cout<<lst[ans[i][y]]<<" ";
+            }
+            cout<<'\n';
+        }
     }
     return 0;
 }
