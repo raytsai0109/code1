@@ -19,9 +19,11 @@ int main(){
             vector<double>ck;
             for(int y=i+1;y<nm;y++){
                 double m=(pl[i].second-pl[y].second)/(pl[i].first-pl[y].first);
-                if(m==0){
-                    cout<<pl[i].first<<" "<<pl[i].second<<" "<<pl[y].first<<" "<<pl[y].second<<endl;
+                if(pl[i].first-pl[y].first==0){
+                    m=20000;
                 }
+                double t=pl[i].second-(m*pl[i].first);
+                m=m*100+t;
                 auto fd=rp.find(m);
                 if(fd==rp.end()){
                     rp[m]=2;
@@ -37,7 +39,6 @@ int main(){
         }
         for(auto i=rp.begin();i!=rp.end();++i){
             int ms=(i->second)*(i->second-1)/2-1;
-            cout<<i->first<<" "<<ms<<endl;
             ans-=ms;
         }
         cout<<ans<<'\n';
