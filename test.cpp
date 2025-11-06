@@ -2,9 +2,8 @@
 using namespace std;
 
 int main(){
-    int a=1,b=2;
     string s;
-    s+=to_string(a);
-    s+=to_string(b);
-    cout<<s;
+    while(cin>>s){
+        cout<<s<<endl;
+    }
 }
