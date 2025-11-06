@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     string s;
-    while(cin>>s){
-        cout<<s<<endl;
-    }
+    cin>>s;
+    double a=stod(s);
+    cout<<s.size();
 }
