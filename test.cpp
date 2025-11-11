@@ -3,7 +3,12 @@ using namespace std;
 
 int main(){
     string s;
-    cin>>s;
-    double a=stod(s);
-    cout<<s.size();
+    while(true){
+        if(!getline(cin,s))return 0;
+        int i=stoi(s);
+        string blk;
+        getline(cin,blk);
+        cout<<i<<endl;
+    }
+    
 }
