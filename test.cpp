@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    string s;
-    cin>>s;
-    double a=stod(s);
-    cout<<s.size();
+    string s="abcde";
+    int a=s.find("b");
+    
+
 }
