@@ -1,0 +1,1 @@
+{"name":"Local: bit mask","url":"c:\\Users\\raytsai\\Desktop\\code1\\code1\\bit mask.cpp","tests":[{"id":1763300869098,"input":"100 50 60\n100 50 50\n100 0 100\n1 0 100\n15 1 15","output":"59\n50\n27\n100\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\raytsai\\Desktop\\code1\\code1\\bit mask.cpp","group":"local","local":true}
