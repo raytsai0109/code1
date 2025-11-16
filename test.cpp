@@ -1,14 +1,17 @@
-#include "bits/stdc++.h"
+#include <iostream>
 using namespace std;
-
-int main(){
-    string s;
-    while(true){
-        if(!getline(cin,s))return 0;
-        int i=stoi(s);
-        string blk;
-        getline(cin,blk);
-        cout<<i<<endl;
+ 
+unsigned int n, l, u, ans;
+ 
+int main() {
+    while (cin >> n >> l >> u){
+        ans = 0;
+        for (int i = 31; i >= 0; i--){
+            if ((ans | (1<<i)) > u) continue;
+            if ((ans | (1<<i)) <= l || !(n & (1<<i))){
+                ans |= (1<<i);
+            }
+        }
+        cout << ans << "\n";
     }
-    
 }
