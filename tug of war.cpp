@@ -5,36 +5,41 @@ int main(){
     int a;
     cin>>a;
     cin.ignore();
-    for(int h=0;h<a;h++){
-        string blanks;
-        getline(cin,blanks);
+    string blk;
+    getline(cin,blk);
+    for(int z=0;z<a;z++){
         int n,total=0;
         cin>>n;
-        vector<int>wei(n);
+        vector<int>num(n);
         for(int i=0;i<n;i++){
-            int nwei;
-            cin>>nwei;
-            total+=nwei;
-            wei[i]=nwei;
+            int nm;
+            cin>>nm;
+            total+=nm;
+            num[i]=nm;
         }
-        vector<bool>bp(total/2+1,0);
-        bp[0]=1;
+        bitset<45001>bp[53];
+        bp[0][0]=1;
         for(int i=0;i<n;i++){
-            if(total/2>wei[i]){
-                for(int x=total/2;x>=wei[i];x--){
-                    if(bp[x-wei[i]]==1){
-                        bp[x]=1;
-                    }
+            for(int z=n/2+1;z>=1;z--){
+                bp[z]|=(bp[z-1]<<num[i]);
+            }
+        }
+        int bst=0;
+        if(n%2==0){
+            for(int i=total/2;i>=0;i--){
+                if(bp[n/2][i]){
+                    bst=i;
+                    break;
+                }
+            }
+        }else{
+            for(int i=total/2;i>=0;i--){
+                if(bp[n/2][i]||bp[n%2+1][i]){
+                    bst=i;
+                    break;
                 }
             }
         }
-        int ans;
-        for(int i=total/2;i>=0;i--){
-            if(bp[i]==1){
-                ans=i;
-                break;
-            }
-        }
-        cout<<ans<<" "<<total-ans<<'\n';
+        cout<<bst<<" "<<total-bst<<'\n';
     }
 }

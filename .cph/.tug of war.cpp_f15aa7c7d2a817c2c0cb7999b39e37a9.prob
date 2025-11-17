@@ -1,0 +1,1 @@
+{"name":"Local: tug of war","url":"/Users/raytsai/Desktop/code1/tug of war.cpp","tests":[{"id":1763345788544,"input":"1\n\n3\n100\n90\n200","output":"190 200"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/raytsai/Desktop/code1/tug of war.cpp","group":"local","local":true}
