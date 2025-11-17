@@ -7,6 +7,7 @@ int main(){
     cin.ignore();
     string blk;
     getline(cin,blk);
+    bool fst=0;
     for(int z=0;z<a;z++){
         int n,total=0;
         cin>>n;
@@ -34,12 +35,16 @@ int main(){
             }
         }else{
             for(int i=total/2;i>=0;i--){
-                if(bp[n/2][i]||bp[n%2+1][i]){
+                if(bp[n/2][i]||bp[n/2+1][i]){
                     bst=i;
                     break;
                 }
             }
         }
+        if(fst!=0){
+            cout<<'\n';
+        }
+        fst=1;
         cout<<bst<<" "<<total-bst<<'\n';
     }
 }
