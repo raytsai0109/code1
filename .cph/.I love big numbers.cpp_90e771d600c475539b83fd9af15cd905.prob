@@ -1,0 +1,1 @@
+{"name":"Local: I love big numbers","url":"c:\\Users\\raytsai\\Desktop\\code1\\code1\\I love big numbers.cpp","tests":[{"id":1763638700540,"input":"5\n60\n100","output":"3\n288\n648\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\raytsai\\Desktop\\code1\\code1\\I love big numbers.cpp","group":"local","local":true}

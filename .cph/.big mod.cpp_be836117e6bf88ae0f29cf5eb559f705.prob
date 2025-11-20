@@ -1,0 +1,1 @@
+{"name":"Local: big mod","url":"c:\\Users\\raytsai\\Desktop\\code1\\code1\\big mod.cpp","tests":[{"id":1763636558102,"input":"3\n18132\n17\n\n17\n1765\n3\n\n2374859\n3029382\n36123\n","output":"13\n2\n13195"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\raytsai\\Desktop\\code1\\code1\\big mod.cpp","group":"local","local":true}
